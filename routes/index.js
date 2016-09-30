@@ -6,12 +6,16 @@ router.post('/reqister',function(req,res,next){
 	var username = req.body.username;
 	var email = req.body.email;
 	var password = req.body.password;
-	db.addUser({username:username,email:email,password:password},function(user){
-		res.send({
-			erron : 0,
-			data : user
-		})
-	})
+	if(username !== '' && email !== '' && password !== ''){
+		console.log('-------');
+		db.addUser({username:username,email:email,password:password},function(user){
+			res.send({
+				erron : 0,
+				data : user
+			})
+		});
+	}
+	
 });
 
 router.get('/isHaveUser',function(req,res,next){

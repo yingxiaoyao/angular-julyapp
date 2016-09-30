@@ -16,16 +16,21 @@ angular.module('reqisterApp',['ngMessages'])
 
 
 			$scope.reqister = function(){
-				$http({
-					method : 'POST',
-					url : '/reqister',
-					data : $scope.user
-				})
-					.success(function(data){
-						console.log(data);
-					})
-					.error(function(data){
-						console.log(data);
-					});
-			};
+				if($scope.user.username !== undefined && $scope.user.password !== undefined &&$scope.user.email !== undefined){
+						$http({
+							method : 'POST',
+							url : '/reqister',
+							data : $scope.user
+						})
+							.success(function(data){
+								console.log(data);
+							})
+							.error(function(data){
+								console.log(data);
+							});
+					
+					}else {
+						return;
+					}
+				};
 		});

@@ -17,10 +17,10 @@ angular.module('loginApp',['ngMessages'])
 								console.log(data);
 								if(data.erron === 0) {
 									if(data.data.status === 0) {
-										$scope.isUser = true;
+										$scope.isUser = false;
 										/*window.location = 'https://www.julyedu.com';*/
 									}else if (data.data.status === 1 ){
-										$scope.isUser = false;
+										$scope.isUser = true;
 									}
 								}
 								console.log($scope.isUser);
