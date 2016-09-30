@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <!-- 让360浏览器切换到极速内核 -->
+        <meta name="renderer" content="webkit">
+        <!-- 使用IE的最新内核或Chrome内核进行渲染 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=9,Chrome=1" />
+        <meta name="keywords" content="面试、找工作、算法、机器学习、七月算法、问答社区">
+        <meta name="description" content="最新笔试面试题互助讨论、算法、机器学习第一问答平台。">
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="/dist/css/common/normalize.css">
+        <link rel="stylesheet" href="/dist/css/common/base.css">
+        <link rel="stylesheet" href="/dist/css/common/iconfont.css">
+        <title>七月在线 - 专注数据领域的在线教育</title>
+
+        <link rel="stylesheet" href="/dist/css/login/login.css">
+    </head>
+    <body ng-app="loginApp" ng-controller='loginContrl'>
+        <div class="login-box">
+            <div class="logoBox">
+                <a class="login-logo" href="https://www.julyedu.com">logo</a>
+                <span class="loginTitle">登录</span>
+            </div>
+            <div class="loginBottom">
+                <div class="login-box-left">
+                    <form class="loginInfo" name="loginForm">
+                        <div class="loginLeftTop">
+                            <p class="input-tips"></p>
+                            <p class="input-tips"></p>
+                            <input type="text" placeholder='手机/用户名/邮箱' ng-model='user.username' required>
+                            <span class="warning" ng-hide='true'>请输入正确的手机/用户名/邮箱</span>
+                            <p class="input-tips"></p>
+                            <input type="password" placeholder='请输入密码' ng-model="user.password" required>
+                        </div>
+                        <div class="loginLeftBottom">
+                            <input type="checkbox" id="isRemember" class="hide">
+                            <label class="isRemember" for="isRemember">记住我</label>
+                            <a href="../findPassword/findPassword.html" class="findPwd">忘记密码？</a>
+                            <input type="submit" name="submit" value="登录" class="btn-submit" id="login_submit" ng-click="login()">
+                        </div>
+                    </form>
+                </div>
+                <div class="login-box-right">
+                    <p class="free-account">没有账号？ <a href="../register/register.html" class="free-register">免费注册</a></p>
+                    <p class="third-login-tip"><span class="third-login-tip-font">合作方账号登录</span></p>
+                    <ul class="link-box">
+                        <li class="icon-weibo" ng-click=''><i class="iconfont">&#xe602;</i></li>
+                        <li class="icon-qq"><i class="iconfont">&#xe603;</i></li>
+                        <li class="icon-weixin"><i class="iconfont">&#xe601;</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="/lib/angular/angular-messages.js"></script>
+        <script type="text/javascript" src="/src/js/login/login.js"></script>
+    </body>
+</html>

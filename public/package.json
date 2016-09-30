@@ -1,0 +1,22 @@
+{
+  "name": "julyedu",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node /"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-file-include": "^0.14.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.3",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

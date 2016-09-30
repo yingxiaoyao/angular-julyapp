@@ -1,0 +1,315 @@
+body {
+  background: #f1f1f1;
+}
+/* logo */
+.login-logo {
+  background: url('../../image/common/logo.png');
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  background-size: 160px;
+  text-indent: -999em;
+  line-height: 40px;
+}
+/* submit */
+.btn-submit {
+  background: #2ca8e6;
+  color: #fff;
+  height: 48px;
+  font-size: 0.94rem !important;
+  margin-top: 20px;
+  outline: none;
+}
+.btn-submit:hover {
+  background: #178EC9;
+}
+.btn-submit:active {
+  background: #1779AA;
+}
+/* checkbox */
+.isRemember {
+  cursor: pointer;
+}
+.isRemember:before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  background-color: #ddd;
+  margin-right: 5px;
+}
+#isRemember:checked + label:before {
+  background: #2ca8e6;
+}
+/* login */
+.login-box {
+  width: 700px;
+  height: 460px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0 ;
+  right: 0 ;
+  margin: auto;
+  /* register */
+}
+.login-box .logoBox {
+  width: 100%;
+  background: #f1f1f1;
+  height: 60px;
+}
+.login-box .logoBox .loginTitle {
+  color: #666;
+  display: inline-block;
+  font-size: 1.3em ;
+  line-height: 40px;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #666;
+}
+.login-box .loginBottom {
+  height: 400px;
+  width: 100%;
+  background: #fff;
+}
+.login-box .loginBottom .login-box-left {
+  float: left;
+  width: 50%;
+  padding: 25px 0;
+  height: 100%;
+}
+.login-box .loginBottom .login-box-left .loginInfo {
+  height: 100%;
+  display: flex;
+  padding: 0 25px;
+  position: relative;
+  border-right: 1px solid #e7e7e7;
+  flex-direction: column ;
+  justify-content: space-between;
+}
+.login-box .loginBottom .login-box-left .loginInfo input {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  font-size: 0.77em;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.login-box .loginBottom .login-box-left .loginInfo .input-tips {
+  padding: 0;
+  margin: 0;
+  height: 20px;
+}
+.login-box .loginBottom .login-box-left .loginInfo .loginLeftBottom {
+  width: 100%;
+  font-size: 0.9em;
+  padding-top: 15px;
+}
+.login-box .loginBottom .login-box-left .loginInfo .loginLeftBottom .findPwd {
+  padding-left: 15px;
+  color: #2ca8e6;
+}
+.login-box .loginBottom .login-box-right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 20px 0;
+}
+.login-box .loginBottom .login-box-right .free-account {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #cbcbcb;
+}
+.login-box .loginBottom .login-box-right .free-account .free-register {
+  color: #3bafe8;
+}
+.login-box .loginBottom .login-box-right .third-login-tip {
+  height: 1px;
+  background-color: #e7e7e7;
+  margin-top: 45px;
+  width: 288px;
+  float: right;
+  margin-right: 25px;
+  text-align: center;
+}
+.login-box .loginBottom .login-box-right .third-login-tip .third-login-tip-font {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  top: -12px;
+  padding: 0 10px;
+  color: #cbcbcb;
+  font-size: 0.86em;
+}
+.login-box .loginBottom .login-box-right .link-box {
+  text-align: center;
+  padding-top: 86px;
+}
+.login-box .loginBottom .login-box-right .link-box li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFF;
+  cursor: pointer;
+}
+.login-box .loginBottom .login-box-right .link-box li .iconfont {
+  font-size: 1em;
+}
+.login-box .loginBottom .login-box-right .link-box .icon-weibo {
+  background: #f56467;
+}
+.login-box .loginBottom .login-box-right .link-box .icon-weibo:hover {
+  background: #DE5457;
+}
+.login-box .loginBottom .login-box-right .link-box .icon-qq {
+  margin: 0 20px;
+  background: #68a5e1;
+}
+.login-box .loginBottom .login-box-right .link-box .icon-qq:hover {
+  background: #337ab7 ;
+}
+.login-box .loginBottom .login-box-right .link-box .icon-weixin {
+  background: #8dc81b;
+}
+.login-box .loginBottom .login-box-right .link-box .icon-weixin:hover {
+  background: #79AD16;
+}
+.login-box .registerBox {
+  height: 440px;
+}
+.login-box .registerBox .login-box-right .free-account {
+  margin-top: 110px;
+}
+/* findPassword */
+.findPwdBox {
+  position: absolute;
+  top: 0 ;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 714px;
+  min-width: 270px ;
+  max-height: 500px;
+  background: #fff;
+  text-align: center;
+  padding: 50px 0;
+  border: 1px solid #b3b3b3;
+}
+.findPwdBox h1 {
+  font-size: 20px;
+  color: #666;
+  font-weight: 100;
+  margin: 45px 0 0;
+}
+.findPwdBox .findPwdInfo {
+  width: 390px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.findPwdBox .findPwdInfo input {
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+/* findPwdSuccess */
+.successInfo {
+  font-size: 0.8rem;
+  color: #666;
+}
+.successInfo a {
+  font-weight: 600;
+  color: #499ef3;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.successInfo a:hover {
+  color: #2a6496;
+}
+.successFooter {
+  background: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  height: 70px;
+  line-height: 70px;
+  color: #666;
+}
+.successFooter span {
+  font-weight: 600;
+}
+.successFooter p {
+  margin: 0;
+}
+/* common */
+.warning {
+  font-size: 0.77rem;
+  color: red;
+}
+@media (max-width: 768px) {
+  .login-box {
+    width: 100%;
+    position: static;
+  }
+  .login-box .logoBox {
+    background: #fff;
+    text-align: center;
+  }
+  .login-box .logoBox .login-logo {
+    margin-top: 30px;
+  }
+  .login-box .logoBox .loginTitle {
+    display: none;
+  }
+  .login-box .loginBottom {
+    height: auto;
+    /* margin-top: 10px; */
+  }
+  .login-box .loginBottom .login-box-left {
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    /* height : auto */
+  }
+  .login-box .loginBottom .login-box-right {
+    width: 100%;
+  }
+  .login-box .loginBottom .login-box-right .free-account {
+    margin: 0;
+  }
+  .login-box .loginBottom .login-box-right .third-login-tip {
+    width: calc(100% - 50px);
+  }
+  .login-box .loginBottom .login-box-right .third-login-tip .third-login-tip-font {
+    background: #f1f1f1;
+  }
+  .login-box .loginBottom .login-box-right .link-box {
+    padding-top: 75px;
+  }
+  .findPwdBox {
+    position: static;
+    border: none;
+    width: auto;
+    padding: 50px 0 0;
+  }
+  .findPwdBox h1 {
+    margin: 25px 0 0;
+  }
+  .findPwdBox .findPwdInfo {
+    width: 100%;
+    padding: 45px;
+  }
+}

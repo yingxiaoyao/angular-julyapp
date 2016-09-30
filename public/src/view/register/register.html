@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        @@include('../common/head.html')
+        <title>七月在线 - 专注数据领域的在线教育</title>
+
+        <link rel="stylesheet" href="../../dist/css/login/login.css">
+    </head>
+    <body ng-app='reqisterApp' ng-controller = 'reqisterCtrol'>
+        <div class="login-box">
+            <div class="logoBox">
+                <a class="login-logo" href="https://www.julyedu.com">logo</a>
+                <span class="loginTitle">注册</span>
+            </div>
+            <div class="loginBottom registerBox">
+                <div class="login-box-left">
+                    <form class="loginInfo" name="loginForm">
+                        <div class="loginLeftTop">
+                            <p class="input-tips"></p>
+                            <p class="input-tips"></p>
+                            <input type="text" name='username' placeholder='用户名' ng-model="user.username" ng-blur="ishaveUser()" required>
+                            <div class="warning" ng-show='true' >
+                                <span ng-bind='"请输入用户名"'></span>
+                            </div>
+                            <p class="input-tips"></p>
+                            <input type="email" name='email' placeholder='请输入正确的邮箱' ng-model='user.email' required>
+                            <div class="warning" ng-show='true' >
+                                <span ng-bind='"请输入正确的邮箱"'></span>
+                            </div>
+                            <p class="input-tips"></p>
+                            <input type="password" name='pwd' placeholder='请输入6-32位密码' ng-model='user.password' required>
+                            <div class="warning" ng-show='true' >
+                                <span ng-bind='""'></span>
+                            </div>
+                        </div>
+                        <div class="loginLeftBottom">
+                            <input type="checkbox" id="isRemember" class="hide" checked>
+                            <label class="isRemember" for="isRemember">我同意</label>
+                            <a href="###" class="findPwd">用户协议</a>
+                            <input type="submit" name="submit" value="注册" class="btn-submit" id="login_submit" ng-click='reqister()'>
+                        </div>
+                    </form>
+                </div><div class="login-box-right">
+                    <p class="free-account">已有账号 <a href="../login/login.html" class="free-register">立即登录</a></p>
+                    <p class="third-login-tip"><span class="third-login-tip-font">合作方账号登录</span></p>
+                    <ul class="link-box">
+                        <li class="icon-weibo"><i class="iconfont">&#xe602;</i></li>
+                        <li class="icon-qq"><i class="iconfont">&#xe603;</i></li>
+                        <li class="icon-weixin"><i class="iconfont">&#xe601;</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dalog"></div>
+        @@include('../common/script.html')
+        <script type="text/javascript" src="../../src/js/reqister/reqister.js"></script>
+    </body>
+</html>

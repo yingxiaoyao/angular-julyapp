@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        @@include('../common/head.html')
+        <title>七月在线 - 专注数据领域的在线教育</title>
+
+        <link rel="stylesheet" href="../../dist/css/login/login.css">
+    </head>
+    <body ng-app="loginApp" ng-controller='loginContrl'>
+        <div class="login-box">
+            <div class="logoBox">
+                <a class="login-logo" href="https://www.julyedu.com">logo</a>
+                <span class="loginTitle">登录</span>
+            </div>
+            <div class="loginBottom">
+                <div class="login-box-left">
+                    <form class="loginInfo" name="loginForm">
+                        <div class="loginLeftTop">
+                            <p class="input-tips"></p>
+                            <p class="input-tips"></p>
+                            <input type="text" name='username' placeholder='手机/用户名/邮箱' ng-model='user.username' required>
+                            <div class="warning" ng-show='loginForm.username.$dirty&&loginForm.username.$invalid' ng-messages='loginForm.username.$error'>
+                                <span ng-message='required' ng-bind='"请输入正确的手机/用户名/邮箱"'></span>
+                            </div>
+                            <p class="input-tips"></p>
+                            <input type="password" placeholder='请输入密码' ng-model="user.password" required>
+                            <div class="warning" ng-show=!isUser >
+                                <span ng-bind='"用户名或者密码不正确"'></span>
+                            </div>
+                        </div>
+                        <div class="loginLeftBottom">
+                            <input type="checkbox" id="isRemember" class="hide">
+                            <label class="isRemember" for="isRemember">记住我</label>
+                            <a href="../findPassword/findPassword.html" class="findPwd">忘记密码？</a>
+                            <input type="submit" name="submit" value="登录" class="btn-submit" id="login_submit" ng-click="login()">
+                        </div>
+                    </form>
+                </div>
+                <div class="login-box-right">
+                    <p class="free-account">没有账号？ <a href="../register/register.html" class="free-register">免费注册</a></p>
+                    <p class="third-login-tip"><span class="third-login-tip-font">合作方账号登录</span></p>
+                    <ul class="link-box">
+                        <li class="icon-weibo" ng-click=''><i class="iconfont">&#xe602;</i></li>
+                        <li class="icon-qq"><i class="iconfont">&#xe603;</i></li>
+                        <li class="icon-weixin"><i class="iconfont">&#xe601;</i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       @@include('../common/script.html')
+        <script type="text/javascript" src="../../src/js/login/login.js"></script>
+    </body>
+</html>
