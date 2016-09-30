@@ -31,8 +31,9 @@
                             <p class="input-tips"></p>
                             <p class="input-tips"></p>
                             <input type="text" name='username' placeholder='用户名' ng-model="user.username" ng-blur="ishaveUser()" required>
-                            <div class="warning" ng-show='true' >
-                                <span ng-bind='"请输入用户名"'></span>
+                            <div class="warning" ng-show='loginForm.username.$dirty&&loginForm.username.$invalid' ng-messages='loginForm.username.$error' >
+                                <span ng-message='required' ng-bind='"请输入用户名"'></span>
+                                <!-- <span ng-message='required' ng-bind='"用户名已经被占用"'></span> -->
                             </div>
                             <p class="input-tips"></p>
                             <input type="email" name='email' placeholder='请输入正确的邮箱' ng-model='user.email' required>
